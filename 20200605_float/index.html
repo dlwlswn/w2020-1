@@ -8,19 +8,20 @@
 		/*reset*/
 		*{padding: 0;margin: 0;}
 		body{background-image: url(../images/bg_grid.gif);}
-		.wrap{
-			background-color:orange;
-			width:200px;
-			
-		}
-		div.wrap>div.box1{
-			width: 100%;
-			height: 100px;
-			background-color: #ff0;
-		}
-		div.wrap>div.box2{
-			width: 100px;height: 100px;
-			background-color: #0ff;
+		.wrap{background-color: #f00;width: 200px;}
+		.box1{float: left;}
+		.box2{float: left;}
+		.clear{clear:both;}
+		.test{width: 100px;height: 100px;background-color:#f0f;}
+		.after{width: 200px;height: 200px;background-color:skyblue;}
+
+		.after:after{content:"안녕하세요";}
+		.after:before{content:"한성용님!!";}
+
+		.wrap:after{
+			content:"";
+			display: block;
+			clear: both;
 		}
 	</style>
 </head>
@@ -28,6 +29,13 @@
 	<div class="wrap">
 		<div class="box1">box1</div>
 		<div class="box2">box2</div>
+		
 	</div>
+
+	<div class="test"></div>
+	<div class="after">
+		center
+	</div>
+	
 </body>
 </html>

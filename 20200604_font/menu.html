@@ -14,9 +14,10 @@
 
 		/*nav*/
 		#nav{
-			width: 1000px;height: 50px;background-color: #aaa;
-			margin:20px auto;
+			background-color: #aaa;
+			width:1000px;
 		}
+		#nav>ul:after{content:"";clear: both;display: block;}
 		#nav>ul>li{
 			float:left;
 			width: 200px;
@@ -50,6 +51,6 @@
 	</nav>
 
 
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, officiis.
+	<div style="background:#ddd;width:10px;height:50px;"></div>
 </body>
 </html>
