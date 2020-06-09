@@ -6,7 +6,7 @@
 	<title>HIMEDIA</title>
 	<style>
 		/*reset*/
-		*{margin: 0;padding: 0;}
+		*{margin: 0;padding: 0;box-sizing:border-box}
 		a:link,a:visited{color:#000;text-decoration:none;}
 		li{list-style:none;}
 
@@ -24,12 +24,12 @@
 		div.gnbWrap>nav.gnbMenu>ul:after{
 			content:"";display: block;clear: both;
 		}
-		div.gnbWrap>nav.gnbMenu>ul>li{float: left;width:163.3333px;box-sizing:border-box;border-right:1px solid #316faa;}
+		div.gnbWrap>nav.gnbMenu>ul>li{float: left;width:163.3333px;border-right:1px solid #316faa;}
 		div.gnbWrap>nav.gnbMenu>ul>li>a{
 			color:white;display: block;
 			text-align: center;height: 45px;line-height:45px;
 		}
-		div.gnbWrap>nav.gnbMenu>ul>li:nth-child(1){border-left:1px solid #316faa;}
+		div.gnbWrap>nav.gnbMenu>ul>li:first-child{border-left:1px solid #316faa;}
 		div.gnbWrap>nav.gnbMenu>ul>li>a:hover{
 			background-color:#233e6f;
 		}
