@@ -9,6 +9,7 @@
 		*{margin: 0;padding: 0;box-sizing:border-box}
 		a:link,a:visited{color:#000;text-decoration:none;}
 		li{list-style:none;}
+		.clearfix:after{content:"";display: block;clear: both;}
 
 		/*header*/
 		div.headerTop{
@@ -90,9 +91,29 @@
 		ul.card>li>img{margin-bottom: 15px;}
 		ul.card>li>p{font-size:12px;}
 		ul.card>li>h3{margin-bottom: 8px;}
+
+
+		div.util{width: 980px;margin: 0 auto;}
+		ul.utilMenu{margin-left:auto;width: 280px;}
+		ul.utilMenu>li{float: left;position: relative;}
+		ul.utilMenu>li:after{
+			content:"";display: block;width: 1px;height: 10px;
+			background-color: #000;position: absolute;top:7px;right: 0;
+		}
+		ul.utilMenu>li:last-child:after{content:"";display:none;}
+		ul.utilMenu>li>a{display: block;padding:0 10px;}
 	</style>
 </head>
 <body>
+	<div class="util">
+		<ul class="utilMenu clearfix">
+			<li><a href="#">Login</a></li>
+			<li><a href="#">Join</a></li>
+			<li><a href="#">Contact us</a></li>
+			<li><a href="#">English</a></li>
+		</ul>
+	</div>
+
 	<div class="headerTop">
 		<h1 class="logo"><a href="#">HIMEDIA</a></h1>
 		<div class="toggle">
@@ -100,7 +121,6 @@
 			<div class="box2"></div>
 			<div class="box3"></div>
 		</div>
-		
 	</div>
 	<div class="gnbWrap"> <!-- 100% -->
 		<nav class="gnbMenu"> <!-- 980px -->
