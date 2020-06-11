@@ -14,11 +14,18 @@
 		div.headerTop{
 			width: 980px;height: 75px;
 			margin:0 auto;
+			position: relative;
 		}
 		div.headerTop>h1.logo{
 			text-align:center;
 			line-height:75px
 		}
+		div.headerTop>div.toggle{
+			width: 50px;height: 50px;
+			border: 1px solid #ddd;
+			position: absolute;right: 0;top:10px;
+		}
+
 		div.gnbWrap{background-color: #1d5da4;}
 		div.gnbWrap>nav.gnbMenu{width: 980px;margin:0 auto;}
 		div.gnbWrap>nav.gnbMenu>ul:after{
@@ -43,6 +50,19 @@
 			background-repeat:no-repeat;
 			background-position:center;
 		}
+		div.visualWrap>div.visual{
+			width: 980px;height: 400px;
+			_background-color:skyblue;
+			margin: 0 auto;
+			position: relative;overflow:hidden;
+		}
+		div.visual>img.light{
+			position: absolute;right:10px;top:50px;
+		}
+		div.visual>img.vTitle{
+			position: absolute;left:0;top:100px;
+		}
+
 
 		/*section*/
 		div.section{background-color:#eee;}
@@ -65,6 +85,12 @@
 <body>
 	<div class="headerTop">
 		<h1 class="logo"><a href="#">HIMEDIA</a></h1>
+		<div class="toggle">
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+		</div>
+		
 	</div>
 	<div class="gnbWrap"> <!-- 100% -->
 		<nav class="gnbMenu"> <!-- 980px -->
@@ -78,7 +104,12 @@
 			</ul>
 		</nav>
 	</div>
-	<div class="visualWrap"></div>
+	<div class="visualWrap">
+		<div class="visual"> 
+			<img src="images/light01.png" alt="" class="light">
+			<img src="images/title01.png" alt="" class="vTitle">
+		</div>
+	</div>
 	<div class="section">
 		<ul class="card">
 			<li>
