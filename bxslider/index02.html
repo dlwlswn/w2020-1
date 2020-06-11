@@ -10,20 +10,20 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
+			$(".slider").bxSlider({auto:true,mode:"fade"});
 			$(".sliderOne").bxSlider();
 		});
 	</script>
 	<style>
-		div.sliderWrap{display:none;}
+		div.sliderWrap{}
 		ul.slider>li>img{width: 100%;}
 		div.wrap{background-color:skyblue;}
 		div.sliderOneWrap{width: 1200px;margin:auto;}
 
 		.bx-wrapper {
-     -moz-box-shadow: 0 none;
-     -webkit-box-shadow: 0 none; 
-     box-shadow: 0 none; 
+     -moz-box-shadow:none;
+     -webkit-box-shadow:none; 
+     box-shadow:none; 
      border: 0 none; 
      margin-bottom:0;
 		}
