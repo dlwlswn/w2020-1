@@ -111,7 +111,7 @@ div.conWrapOne div.cardBody{
 div.conWrapOne h3{margin-bottom: 7px;color:#626262;}
 
 /*contents Two*/
-div.conWrapTwo{width: 980px;margin:0 auto;}
+div.conWrapTwo{width: 980px;margin:0 auto;margin-bottom:25px;}
 div.conWrapTwo ul.card>li{
 	float: left;width: 310px;margin-right:25px;
 	border: 1px solid #ddd;padding:20px;position: relative;
@@ -123,3 +123,15 @@ div.conWrapTwo img{position: absolute;top:10px;right:-10px;}
 div.conWrapTwo h3{margin-bottom: 7px;color:#626262;}
 div.conWrapTwo p{margin-bottom:10px;}
 div.conWrapTwo a{font-size:14px;color:#4b8ce0;}
+
+
+/*footer*/
+footer#footer{background-color: #5e5e5e;}
+.footerTopWrap{background-color: #4d4d4d;}
+.footerTop{width: 980px;margin:0 auto;overflow: hidden;}
+.footerTop li{float: left;position: relative;}
+.footerTop li:after{
+	content:"";display: block;width: 1px;height: 16px;background-color:white;
+	position: absolute;top:13px;left:-1px;
+}
+.footerTop li a{display: block;padding:0 15px;color:white;line-height:40px;}
