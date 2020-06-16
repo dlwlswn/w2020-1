@@ -51,10 +51,11 @@
 	.container ul.content li{
 		float: left;width:281.25px;margin-right:25px;
 		position: relative;overflow: hidden;
+		border-radius:30px 0 30px 0
 	}
 	.container ul.content .overlay{
 		width: 281.25px;height:281.25px;
-		position: absolute;background-color:rgba(255,0,0,0.5);
+		position: absolute;
 		transition:0.3s;top:300px;
 	}
 	.container ul.content li:hover .overlay{top:0;}
@@ -66,13 +67,15 @@
 		background-image: url(../images/pc01.jpg);
 		background-repeat: no-repeat;
 		background-position:center;*/
-		
 		/*background-attachment: fixed;*/
 
 		background:#f00 url(../images/pc01.jpg) no-repeat center fixed;
 		-webkit-background-size: cover;
 		background-size:cover;
 	}
+	.red{background-color:rgba(255,0,0,0.5);}
+	.blue{background-color:rgba(0,0,255,0.5);}
+	.green{background-color:rgba(0,255,0,0.5);}
 </style>
 <div class="container">
 	<div class="hdTitle">
@@ -82,25 +85,25 @@
 	<ul class="content clearfix">
 		<li>
 			<img src="../images/testimg.jpg" alt="">
-			<div class="overlay">
+			<div class="overlay red">
 				<div class="txt">Lorem ipsum.</div>
 			</div>
 		</li>
 		<li>
 			<img src="../images/testimg.jpg" alt="">
-			<div class="overlay">
+			<div class="overlay red">
 				<div class="txt">Lorem ipsum.</div>
 			</div>
 		</li>
 		<li>
 			<img src="../images/testimg.jpg" alt="">
-			<div class="overlay">
+			<div class="overlay red">
 				<div class="txt">Lorem ipsum.</div>
 			</div>
 		</li>
 		<li>
 			<img src="../images/testimg.jpg" alt="">
-			<div class="overlay">
+			<div class="overlay red">
 				<div class="txt">Lorem ipsum.</div>
 			</div>
 		</li>
@@ -116,25 +119,25 @@
 		<ul class="content clearfix">
 			<li>
 				<img src="../images/testimg.jpg" alt="">
-				<div class="overlay">
+				<div class="overlay blue">
 					<div class="txt">Lorem ipsum.</div>
 				</div>
 			</li>
 			<li>
 				<img src="../images/testimg.jpg" alt="">
-				<div class="overlay">
+				<div class="overlay blue">
 					<div class="txt">Lorem ipsum.</div>
 				</div>
 			</li>
 			<li>
 				<img src="../images/testimg.jpg" alt="">
-				<div class="overlay">
+				<div class="overlay blue">
 					<div class="txt">Lorem ipsum.</div>
 				</div>
 			</li>
 			<li>
 				<img src="../images/testimg.jpg" alt="">
-				<div class="overlay">
+				<div class="overlay blue">
 					<div class="txt">Lorem ipsum.</div>
 				</div>
 			</li>
@@ -150,25 +153,25 @@
 	<ul class="content clearfix">
 		<li>
 			<img src="../images/testimg.jpg" alt="">
-			<div class="overlay">
+			<div class="overlay green">
 				<div class="txt">Lorem ipsum.</div>
 			</div>
 		</li>
 		<li>
 			<img src="../images/testimg.jpg" alt="">
-			<div class="overlay">
+			<div class="overlay green">
 				<div class="txt">Lorem ipsum.</div>
 			</div>
 		</li>
 		<li>
 			<img src="../images/testimg.jpg" alt="">
-			<div class="overlay">
+			<div class="overlay green">
 				<div class="txt">Lorem ipsum.</div>
 			</div>
 		</li>
 		<li>
 			<img src="../images/testimg.jpg" alt="">
-			<div class="overlay">
+			<div class="overlay green">
 				<div class="txt">Lorem ipsum.</div>
 			</div>
 		</li>
