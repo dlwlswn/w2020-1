@@ -39,7 +39,7 @@
 	</div>
 
 <style>
-	.container{width: 1200px;margin: 0 auto}
+	.container{width: 1200px;margin: 0 auto;padding:20px 0;}
 	.container h2{text-align: center;}
 	.container h2:after{
 		content:"";display: block;
@@ -47,10 +47,17 @@
 		background-color: #888;margin: 10px auto
 	}
 	.container p{text-align: center;}
-	.container ul.content .overlay{display: none;}
+	.container .hdTitle{margin-bottom: 20px;}
 	.container ul.content li{
 		float: left;width:281.25px;margin-right:25px;
+		position: relative;overflow: hidden;
 	}
+	.container ul.content .overlay{
+		width: 281.25px;height:281.25px;
+		position: absolute;background-color:rgba(255,0,0,0.5);
+		transition:0.3s;top:300px;
+	}
+	.container ul.content li:hover .overlay{top:0;}
 	.container ul.content li img{width: 100%;}
 	.container ul.content li:last-child{margin-right:0;}
 </style>
