@@ -52,8 +52,30 @@
 			to{height: 100%;}
 		}
 
+		.line2{width: 10px;height: 0;background-color: #00f;position: absolute;bottom:0;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			right:0;
+		}
+		@keyframes lineAniTwo{
+			from{height: 0;}
+			to{height: 100%;}
+		}
+
+		.line3{width: 0px;height: 10px;background-color: #00f;position: absolute;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			right: 0;bottom: 0;
+		}
+		@keyframes lineAniThree{
+			from{width: 0;}
+			to{width: 100%;}
+		}
+
 		.boxWrap:hover .line{animation-name:lineAni;}
 		.boxWrap:hover .line1{animation-name:lineAniOne;}
+		.boxWrap:hover .line2{animation-name:lineAniTwo;}
+		.boxWrap:hover .line3{animation-name:lineAniThree;}
 
 	</style>
 </head>
@@ -64,6 +86,8 @@
 	<div class="boxWrap">
 		<div class="line"></div>
 		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
 	</div>
 </body>
 </html>
