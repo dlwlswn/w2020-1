@@ -10,6 +10,7 @@
 			width: 500px;height: 500px;
 			background:#ff0;
 			position: relative;
+			margin: 0 auto;
 		}
 
 		.box1,.box2{
@@ -74,6 +75,10 @@
 			50%{bottom: 50px;}
 			100%{bottom: 20px;}
 		}
+		.box3{
+			width: 100px;height: 100px; background:#0ff;
+			position: absolute;left:calc(50% - 50px);top:calc(50% - 50px);
+		}
 
 	</style>
 </head>
@@ -81,9 +86,8 @@
 	<div class="boxWrap">
 		<div class="box1"></div>
 		<div class="box2"></div>
-		<div class="mouse">
-			
-		</div>
+		<div class="mouse"></div>
+		<div class="box3"></div>
 	</div>
 </body>
 </html>
