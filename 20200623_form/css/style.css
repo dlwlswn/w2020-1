@@ -41,3 +41,5 @@ div#wrap{width: 460px;margin: auto;}
 	background-repeat: no-repeat;
 }
 #content fieldset .field .icon.mail{background-position: 0 -47px;}
+#content fieldset .field .icon.pass{background-position: 0 -466px;}
+#content fieldset .field .icon.pass2{background-position: 0 -515px;}
