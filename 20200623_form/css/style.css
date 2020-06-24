@@ -30,5 +30,9 @@ div#wrap{width: 460px;margin: auto;}
 }
 #content fieldset .field .inp-field{
 	width: 350px;height: 49px;border:0 none;
-	color:blue;
+	color:#999;font-size:16px;text-indent:12px;
+}
+#content fieldset .field .icon{
+	display: block;width: 97px;height: 48px;
+	background:skyblue;
 }
