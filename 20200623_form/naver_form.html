@@ -65,8 +65,27 @@
 									<option value="11월">11월</option>
 									<option value="12월">12월</option>
 								</select>
+								<span class="field-wall">|</span>
+								<input type="text" placeholder="일" maxlength="2" class="inp-field w145">
+							</div>
+							<div class="field">
+								<label for="user-email" class="blind">본인확인메일</label>
+								<input type="text" id="user-email" name="user-e" placeholder="본인확인 이메일(선택)" class="inp-field w458">
 							</div>
 						</fieldset>
+						<fieldset>
+							<legend>전화번호인증</legend>
+							<div class="field confirm">
+								<label for="user-num" class="blind">인증번호받기</label>
+								<select name="user-n" id="user-num">
+									<option value="+82">+82</option>
+								</select>
+								<span class="field-wall">|</span>
+								<input type="text" placeholder="휴대전화번호" class="inp-field w205">
+
+							</div>
+						</fieldset>
+
 
 						<div class="btn-area">
 							<input type="submit" value="가입하기" class="btn-submit">
