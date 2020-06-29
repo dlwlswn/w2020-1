@@ -11,14 +11,33 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<style>
 		body{font-family: 'Noto Sans KR', sans-serif;}
-		.smenu{display: none;}
+		
 
-		nav.gnb{width: 1000px;margin: 0 auto;background:skyblue;}
+		nav.gnb{width: 1000px;margin: 0 auto;background:skyblue;border-bottom: 1px solid #000;position: relative;z-index:1;}
 		nav.gnb>ul{}
-		nav.gnb>ul>li{float: left;width: 200px;}
+		nav.gnb>ul>li{float: left;width: 200px;height: 40px;}
 		nav.gnb>ul>li>a{display: block;text-align: center;line-height: 40px;font-weight:bold;}
 		nav.gnb>ul>li:hover{background:blue;}
 		nav.gnb>ul>li:hover a{color:white;}
+
+		nav.gnb>ul>li:hover .smenu{display: block;background:#000fff;}
+		/*nav.gnb>ul:hover .smenu{display: block;border-top: 1px solid #000;}*/
+
+		.smenu{display: none;}
+		.smenu>li{text-align: center;line-height: 35px;}
+		.smenu>li:hover{background: #00f0ff;}
+
+
+		.visual{height: 400px;background:#ddd;}
+
+		.bx-wrapper {
+		    -moz-box-shadow: none;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		    border: 0 none;
+		}
+		.visual li.vimg{height: 400px;}
+		.visual li.vimg img{position: absolute;width: 100%}
 	</style>
 </head>
 <body>
@@ -66,5 +85,18 @@
 			</li>
 		</ul>
 	</nav>
+	<div class="visual">
+		<ul class="slider">
+			<li class="vimg"><img src="images/pc01.jpg" alt=""></li>
+			<li class="vimg"><img src="images/pc02.jpg" alt=""></li>
+			<li class="vimg"><img src="images/pc03.jpg" alt=""></li>
+		</ul>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider();
+
+		});
+	</script>
 </body>
 </html>
