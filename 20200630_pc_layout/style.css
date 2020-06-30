@@ -1,10 +1,10 @@
 @charset "utf-8";
 /*main header*/
 #main_header{
-	width: 960px;margin: 0 auto;border: 1px solid #000;
-	position: relative;
+	width: 960px;margin: 0 auto;_border: 1px solid #000;
+	position: relative;height: 130px;
 }
-	#logo{position: absolute;top:30px;}
+	#logo{position: absolute;top:20px;left:10px;}
 	
 	#util_menu{position: absolute;right:0;top: 0;}
 	#util_menu>ul>li{float: left;}
@@ -15,4 +15,13 @@
 		border-radius:0 10px 10px 0;}
 	#util_menu>ul>li:first-child>a{border-radius:10px 0 0 10px}
 	#util_menu>ul>li>a:hover{background-color:skyblue;}
+	
+	#main_menu{position: absolute;bottom: 0;width: 100%;}
+	#main_menu>ul{}
+	#main_menu>ul>li{float: left;width: 20%;border: 1px solid #000;border-right:0 none;transition:0.3s;}
+	#main_menu>ul>li:last-child{border-right: 1px solid #000;border-radius:0 10px 10px 0;}
+	#main_menu>ul>li:first-child{border-radius:10px 0 0 10px;}
+	#main_menu>ul>li:hover{background-color:skyblue;}
+	#main_menu>ul>li>a{display: block;text-align: center;line-height:40px;}
+
 
