@@ -49,6 +49,11 @@
 	.inp:nth-child(2):checked ~ div.tab_items2{display: block;}
 	.inp:nth-child(2) ~ div.tab_items2{display: none;}
 
+	.item{
+		padding:10px;border: 1px solid #000;
+		border-top:0 none;
+	}
+
 
 
 /*footer*/
