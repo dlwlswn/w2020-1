@@ -39,8 +39,15 @@
 	}
 	
 	.inp:nth-child(1):checked ~ div.buttons > label:first-child{background-color: #f00 !important;}
-	.inp:nth-child(2):checked ~ div.buttons > label:last-child{background-color: #ff0000 !important;}
+	.inp:nth-child(2):checked ~ div.buttons > label:last-child{background-color: #f00 !important;}
+	/*input[type="radio"].inp:nth-child(1)*/
 
+	.inp:nth-child(1),.inp:nth-child(2){display: none;}
+	.inp:nth-child(1):checked ~ div.tab_items1{display: block;}
+	.inp:nth-child(1) ~ div.tab_items1{display: none;}
+
+	.inp:nth-child(2):checked ~ div.tab_items2{display: block;}
+	.inp:nth-child(2) ~ div.tab_items2{display: none;}
 
 
 
