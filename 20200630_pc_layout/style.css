@@ -53,7 +53,14 @@
 		padding:10px;border: 1px solid #000;
 		border-top:0 none;
 	}
-
+	.thumbnail{float: left;}
+	.des{float: left;margin-left:10px;}
+	.des > strong{
+		width: 120px;display: block;
+		white-space:nowrap;
+		text-overflow:ellipsis;
+		overflow:hidden;
+	}
 
 
 /*footer*/
