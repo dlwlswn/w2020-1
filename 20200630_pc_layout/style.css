@@ -56,7 +56,8 @@
 	.thumbnail{float: left;}
 	.des{float: left;margin-left:10px;}
 	.des > strong{
-		width: 120px;display: block;
+		width: 120px;
+		display: block;
 		white-space:nowrap;
 		text-overflow:ellipsis;
 		overflow:hidden;
