@@ -20,39 +20,27 @@
 		.contents>ul>li>div.bg{
 			position:absolute;
 			width: 100%;height: 100%;
-			background:rgba(0,0,0,0.3);top:100%;transition:0.3s;
+			background:rgba(0,0,0,0.3);transition:0.3s;
 		}
 		.contents>ul>li>div.bg>h3{
 			_background:#fff;width: 100px;line-height: 40px;
 			text-align: center;position: absolute;left: 50%;top: 50%;
 			transform:translate(-50%,-50%);color:white;
 		}
-		.contents>ul>li:hover div.bg{top:0;}
+		.contents>ul>li:hover div.bg{}
+		.contents>ul>li:hover div.bg.left{left:0;}
+		.contents>ul>li:hover div.bg.top{top:0;}
+		.contents>ul>li:hover div.bg.right{right:0;}
+		.contents>ul>li:hover div.bg.bottom{bottom:0;}
+		.contents>ul>li:hover div.bg.center{left: 50%;top: 50%;
+			transform:translate(-50%,-50%) scale(1);}
 		.contents>ul>li:hover img{transform:scale(1.2);}
 
-
-
-		/*contentsOne*/
-		.contentsOne{width: 1200px;margin: 0 auto;padding:100px 0;}
-		.contentsOne>ul>li{
-			float: left;width:228px;margin-right: 15px;
-			position: relative;overflow: hidden;
-		}
-		.contentsOne>ul>li:last-child{margin-right:0;}
-		.contentsOne>ul>li>img{width: 100%;transition:0.3s;}
-		.contentsOne>ul>li>div.bg{
-			position:absolute;
-			width: 100%;height: 100%;
-			background:rgba(0,0,0,0.3);left:-100%;top:0;transition:0.3s;
-		}
-		.contentsOne>ul>li>div.bg>h3{
-			_background:#fff;width: 100px;line-height: 40px;
-			text-align: center;position: absolute;left: 50%;top: 50%;
-			transform:translate(-50%,-50%);color:white;
-		}
-		.contentsOne>ul>li:hover div.bg{left:0;}
-		.contentsOne>ul>li:hover img{transform:scale(1.2);}
-
+		.sleft{left:-100%;top:0;}
+		.stop{top:100%;}
+		.sright{right:-100%;top:0;}
+		.sbottom{bottom:100%;}
+		.scenter{left: 50%;top: 50%;transform:translate(-50%,-50%) scale(0)}
 
 	</style>
 </head>
@@ -62,72 +50,37 @@
 			<ul class="clearfix">
 				<li>
 					<img src="../images/testimg.jpg" alt="">
-					<div class="bg">
+					<div class="bg sleft left">
 						<h3>여행</h3>
 					</div>
 				</li>
 				<li>
 					<img src="../images/testimg.jpg" alt="">
-					<div class="bg">
+					<div class="bg stop top">
 						<h3>여행</h3>
 					</div>
 				</li>
 				<li>
 					<img src="../images/testimg.jpg" alt="">
-					<div class="bg">
+					<div class="bg sbottom bottom">
 						<h3>여행</h3>
 					</div>
 				</li>
 				<li>
 					<img src="../images/testimg.jpg" alt="">
-					<div class="bg">
+					<div class="bg scenter center">
 						<h3>여행</h3>
 					</div>
 				</li>
 				<li>
 					<img src="../images/testimg.jpg" alt="">
-					<div class="bg">
+					<div class="bg sright right">
 						<h3>여행</h3>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<div class="container bgcolorOne">
-		<div class="contentsOne">
-			<ul class="clearfix">
-				<li>
-					<img src="../images/testimg.jpg" alt="">
-					<div class="bg">
-						<h3>여행</h3>
-					</div>
-				</li>
-				<li>
-					<img src="../images/testimg.jpg" alt="">
-					<div class="bg">
-						<h3>여행</h3>
-					</div>
-				</li>
-				<li>
-					<img src="../images/testimg.jpg" alt="">
-					<div class="bg">
-						<h3>여행</h3>
-					</div>
-				</li>
-				<li>
-					<img src="../images/testimg.jpg" alt="">
-					<div class="bg">
-						<h3>여행</h3>
-					</div>
-				</li>
-				<li>
-					<img src="../images/testimg.jpg" alt="">
-					<div class="bg">
-						<h3>여행</h3>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
+	
 </body>
 </html>
