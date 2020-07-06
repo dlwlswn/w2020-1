@@ -64,3 +64,16 @@
 	border-left: 1px solid #000;
 	position: absolute;top: 10px;left:-1px;
 }
+
+/*section*/
+#section_header{padding: 20px;}
+#section_article{padding: 20px;}
+#section_article p{margin-bottom:10px;}
+
+/*footer*/
+#main_footer{
+	padding: 10px;border-top: 1px solid #000;
+	text-align: center;
+}
+
+#main_footer>address{font-style:normal;}
