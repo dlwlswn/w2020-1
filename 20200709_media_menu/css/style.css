@@ -3,3 +3,17 @@
 .topNav a{display: block;color:white;float: left;padding:14px 16px;}
 .topNav a.icon{float: right;}
 .topNav a.icon{display: none;}
+
+@media screen and (max-width:576px){ /*mobile*/
+	/*.topNav a:not(:first-child){display:none;}*/
+	
+	.topNav a{display: none;}
+	.topNav a:first-child{display: block;}
+	.topNav a.icon{display: block;}
+}
+@media screen and (min-width:577px) and (max-width:922px){/*tablet*/
+
+}
+@media screen and (min-width:923px){ /*pc*/
+
+}
