@@ -10,6 +10,8 @@
 	.topNav a{display: none;}
 	.topNav a:first-child{display: block;}
 	.topNav a.icon{display: block;}
+	.topNav.responsive a{float:none;display: block;}
+	.topNav.responsive a.icon{position: absolute;right: 0;top:0;}
 }
 @media screen and (min-width:577px) and (max-width:922px){/*tablet*/
 	.menuWrap{width: 100%;}
