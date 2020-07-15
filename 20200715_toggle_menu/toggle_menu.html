@@ -27,7 +27,7 @@
 
 		.menu{
 			width: 100%;height: 100%;position: fixed;
-			background-color:gray;left:-100%;transition: 0.3s
+			background-color:gray;left:-100%;
 		}
 
 		.menu h3{
@@ -35,25 +35,28 @@
 			left:50%;top:50%;transform:translate(-50%,-50%);
 		}
 
-		.menu.top{left:0;}
+		/*.menu.top{left:0;}*/
 	</style>
 	<script>
 		$(document).ready(function(){
 			$(".toggleMenu").click(function(){
-				console.log($(".toggleMenu").attr("class"));
+				//console.log($(this).attr("class"));
 
-				if($(".toggleMenu").attr("class") == "toggleMenu"){
-					$(".toggleMenu").addClass("change");
+				var toggle = $(this).attr("class")
+				if(toggle == "toggleMenu"){
+					$(this).addClass("change");
+					$(".menu").stop().animate({left:0},300);
 				}else{
-					$(".toggleMenu").removeClass("change");
+					$(this).removeClass("change");
+					$(".menu").stop().animate({left:"-100%"},300);
 				}
 
-				var menu = $(".menu").attr("class");
-				if(menu == "menu"){
-					$(".menu").addClass("top"); //class menu에 top추가
-				}else{
-					$(".menu").removeClass("top");
-				}
+				// var menu = $(".menu").attr("class");
+				// if(menu == "menu"){
+				// 	$(".menu").addClass("top"); //class menu에 top추가
+				// }else{
+				// 	$(".menu").removeClass("top");
+				// }
 
 			});
 		});
