@@ -11,12 +11,13 @@
 
 		function pringAvg(){
 			var sum = 0; //지역변수
-			var n = com.length;
-			for(var i=0;i<n;i++){
+			//var n = com.length;
+
+			for(var i=0;i<com.length;i++){
 				sum = sum + com[i];
 				//sum += com[i]
 			}
-			return (sum/n);
+			return (sum/com.length);
 		}
 
 		var getAvg = pringAvg();
