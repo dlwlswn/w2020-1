@@ -8,15 +8,24 @@
 	<link rel="stylesheet" href="css/all.css"> <!-- font awesome -->
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<style>
-		div.menuWrap{}
+		div.menuWrap{
+			width: 1200px;position: relative;margin: 0 auto;
+			background: #333;height: 45px;
+		}
+		div.menuWrap h1{width: 150px;text-align: center;}
+		div.menuWrap h1 a{color:white;}
+		div.menuWrap .myTopMenu{position: absolute;top:0;left:150px;}
+		.myTopMenu ul li{float: left;padding-right:20px;}
+		.myTopMenu ul li a{color:white;display: block;line-height:45px;}
+
 	</style>
 </head>
 <body>
-	<div class="menuWrap">
+	<div class="menuWrap clearfix">
 		<h1><a href="#">logo</a></h1>
 		<div class="myTopMenu">
 			<nav class="topNav">
-				<ul>
+				<ul class="clearfix">
 					<li><a href="#"><i class="fab fa-adobe"></i> COMPANY</a></li>
 					<li><a href="#"><i class="fab fa-angellist"></i> PRODUCT</a></li>
 					<li><a href="#"><i class="fas fa-at"></i> CONTACT</a></li>
