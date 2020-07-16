@@ -30,6 +30,7 @@
 			div.menuWrap h1{width: 150px;text-align: center;}
 			div.menuWrap h1 a{color:white;}
 			div.menuWrap .myTopMenu{position: absolute;top:0;left:200px;}
+			.topNav{position: absolute;width:500px;left:;}
 			.myTopMenu ul li{float: left;padding-right:20px;}
 			.myTopMenu ul li a{color:white;display: block;line-height:45px;}
 
@@ -93,6 +94,19 @@
 				}
 			});
 		});
+		$(window).resize(function(){
+			var wSize = $(window).width();
+			console.log(wSize);
+
+			if(wSize > 576){
+				$(".myTopMenu").css("top",0);
+				$(".toggleMenu").removeClass("change");
+			}else{
+				$(".myTopMenu").css("top","-100%");
+			}
+		});
+
+		
 	</script>
 </head>
 <body>
