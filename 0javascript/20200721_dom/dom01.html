@@ -36,7 +36,35 @@
 
 	<button type="button" onclick="change()">색상변경</button>
 	<a href="#" onclick="reset()">초기값</a>
+
 	<div onclick="inChange()">내용변경</div>
 	<div onclick="reChange()">내용초기</div>
+
+
+	<button onclick="this.style.background='orange'">버튼</button>
+	<button onclick="bChange(this,'30px','red')">버튼</button>
+	<button onclick="bChange(this,'40px','skyblue')">버튼1</button>
+	<div onclick="bChange(this,'50px','blue')">변경</div>
+	<script>
+		function bChange(obj,size,color){
+			obj.style.color = color;
+			obj.style.fontSize = size;
+
+		}
+	</script>
+
+	<button type="button" onclick="alertBtn()">경고</button>
+	<input type="text" id="input" value="포커스 되는곳">
+	<script>
+		function alertBtn(){
+			var text = "안녕하세요\n"; //이스케이프 문자 \n 줄바꿈
+			text += "만나서 반가워요.\n" // text = text + ~~~
+			text += "저는 한성용입니다."
+			alert(text);
+
+			document.getElementById("input").focus();
+
+		}
+	</script>
 </body>
 </html>
