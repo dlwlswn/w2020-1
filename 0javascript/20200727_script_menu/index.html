@@ -47,22 +47,20 @@
 		var view = document.getElementsByClassName("view");
 
 		//tMenu[0].onclick = change; //click event 등록
-
-		//tMenu[0].addEventListener("이벤트이름",함수이름);
+		//tMenu[0].addEventListener("이벤트이름",함수이름); addEventListener method 이벤트 등록
 		tMenu[0].addEventListener("click",change);
 
 		function change(){
 			var toggle = tMenu[0].getAttribute("class");  //attr("class")
 			if(toggle == "toggleMenu"){
-				tMenu[0].setAttribute("class","toggleMenu change");
+				this.setAttribute("class","toggleMenu change");
 				view[0].style.left ="0";
 			}else{
-				tMenu[0].setAttribute("class","toggleMenu");
+				this.setAttribute("class","toggleMenu");
 				view[0].style.left = "-100%";
 			}
 		}
-		// tMenu[0].onclick = change;
-		// function change(){}
+
 
 	</script>
 </body>
