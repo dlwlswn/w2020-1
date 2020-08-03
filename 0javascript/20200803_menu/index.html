@@ -23,9 +23,67 @@
 		#menu ul.sub>li:hover{background:skyblue;}
 		#menu ul.sub>li>a{display: block;text-align: center;}
 
-		#menu>ul>li:hover ul.sub{display: block;}
+		/*#menu>ul>li:hover ul.sub{display: block;}*/
 		/*#menu>ul:hover ul.sub{display: block;}*/
+		.visual{background-color:#ddd;height: 400px;}
 	</style>
+	<script>
+		$(document).ready(function(){
+			//css
+			// $("#menu>ul>li").mouseover(function(){
+			// 	var i = $(this).index();
+			// 	// $("#menu>ul>li").eq(i).find("ul.sub").css("display","block");
+			// 	$("#menu>ul>li:eq("+i+")").find("ul.sub").css("display","block"); 
+			// 	//$("선택자:eq(0)")
+			// });
+
+			// $("#menu>ul>li").mouseout(function(){
+			// 	$("ul.sub").css("display","none")
+			// });
+
+			//$("#menu>ul>li").mouseover().mouseout();
+
+
+			//show()/hide
+			// $("#menu>ul>li").mouseover(function(){}).mouseout(function(){});
+			// $("#menu>ul>li").mouseover(function(){
+			// 	var i = $(this).index();
+			// 	$("#menu>ul>li").eq(i).find("ul.sub").show(); //show - display:block
+			// }).mouseout(function(){
+			// 	$("ul.sub").hide();
+			// });
+
+
+			//slideDown()
+			// $("#menu>ul>li").mouseover(function(){
+			// 	var i = $(this).index();
+			// 	$("#menu>ul>li").eq(i).find("ul.sub").slideDown(); 
+			// }).mouseout(function(){
+			// 	$("ul.sub").hide();
+			// });
+
+			// $("#menu>ul>li").mouseenter(function(){
+			// 	var i = $(this).index();
+			// 	$("#menu>ul>li").eq(i).find("ul.sub").stop().slideDown(); 
+			// }).mouseleave(function(){
+			// 	$("ul.sub").hide();
+			// });
+
+		
+
+
+
+
+			// $("#menu>ul>li").hover(function(){},function(){});
+			$("#menu>ul>li").hover(function(){
+				var i = $(this).index();
+				$("#menu>ul>li").eq(i).find("ul.sub").stop().fadeIn(300)
+			},function(){
+				$("ul.sub").hide();
+			});
+
+		});
+	</script>
 </head>
 <body>
 	<!-- nav#menu>ul>li*5>a[#]>{menu$}^ul.sub>li*5>a[#]>{smenu$} -->
@@ -83,5 +141,6 @@
 			</li>
 		</ul>
 	</nav>
+	<div class="visual"></div>
 </body>
 </html>
