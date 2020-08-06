@@ -34,6 +34,33 @@
 		}
 		nav.menu a{display: inline-block;line-height:40px;}
 	</style>
+	<script>
+		$(function(){
+			// var oneTop = $("#l_01").offset().top;
+			// var twoTop = $("#l_02").offset().top;
+			// var threeTop = $("#l_03").offset().top;
+			// $(".menu > a").eq(0).click(function(){
+			// 	$("html,body").animate({scrollTop:oneTop},300);
+			// 	return false;
+			// });
+			// $(".menu > a").eq(1).click(function(){
+			// 	$("html,body").animate({scrollTop:twoTop},300);
+			// 	return false;
+			// });
+			// $(".menu > a").eq(2).click(function(){
+			// 	$("html,body").animate({scrollTop:threeTop},300);
+			// 	return false;
+			// });
+
+			$(".menu>a").click(function(){
+				var i = $(this).index();
+				var st = $(".scene").eq(i).offset().top;
+				console.log(i+" 번째 위치값 "+st);
+				$("html,body").animate({scrollTop:st},300);
+			});
+		});
+
+	</script>
 </head>
 <body>
 	<nav class="menu">
@@ -45,7 +72,7 @@
 		<!-- div>(h2>lorem5)+(p>lorem20)
 		div>h2>lorem5^p>lorem20 -->
 		<div>
-			<h2>Lorem ipsum dolor sit amet.</h2>
+			<h2>Lorem ipsum dolor sit #01</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ducimus tempora assumenda nulla dicta provident eum facere quod rerum fuga.</p>
 		</div>
 	</section>
@@ -53,7 +80,7 @@
 		<!-- div>(h2>lorem5)+(p>lorem20)
 		div>h2>lorem5^p>lorem20 -->
 		<div>
-			<h2>Lorem ipsum dolor sit amet.</h2>
+			<h2>Lorem ipsum dolor sit #02</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ducimus tempora assumenda nulla dicta provident eum facere quod rerum fuga.</p>
 		</div>
 	</section>
@@ -61,7 +88,7 @@
 		<!-- div>(h2>lorem5)+(p>lorem20)
 		div>h2>lorem5^p>lorem20 -->
 		<div>
-			<h2>Lorem ipsum dolor sit amet.</h2>
+			<h2>Lorem ipsum dolor sit #03</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ducimus tempora assumenda nulla dicta provident eum facere quod rerum fuga.</p>
 		</div>
 	</section>
