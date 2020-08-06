@@ -27,10 +27,21 @@
 		}
 		.scene div h2{font-size:3em;}
 		.scene div h2:after{content:"";width: 100%;height: 2px;background: #ffffff;display: block;margin:10px auto;}
+
+		nav.menu{
+			position: fixed;width: 100%;height: 40px;
+			background-color:skyblue;z-index:1;padding-left:40px;
+		}
+		nav.menu a{display: inline-block;line-height:40px;}
 	</style>
 </head>
 <body>
-	<section class="scene one">
+	<nav class="menu">
+		<a href="#l_01">menu1</a> 
+		<a href="#l_02">menu2</a> 
+		<a href="#l_03">menu3</a>
+	</nav>
+	<section class="scene one" id="l_01">
 		<!-- div>(h2>lorem5)+(p>lorem20)
 		div>h2>lorem5^p>lorem20 -->
 		<div>
@@ -38,7 +49,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ducimus tempora assumenda nulla dicta provident eum facere quod rerum fuga.</p>
 		</div>
 	</section>
-	<section class="scene two">
+	<section class="scene two"  id="l_02">
 		<!-- div>(h2>lorem5)+(p>lorem20)
 		div>h2>lorem5^p>lorem20 -->
 		<div>
@@ -46,7 +57,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ducimus tempora assumenda nulla dicta provident eum facere quod rerum fuga.</p>
 		</div>
 	</section>
-	<section class="scene three">
+	<section class="scene three"  id="l_03">
 		<!-- div>(h2>lorem5)+(p>lorem20)
 		div>h2>lorem5^p>lorem20 -->
 		<div>
