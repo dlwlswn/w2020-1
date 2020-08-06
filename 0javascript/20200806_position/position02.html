@@ -52,13 +52,30 @@
 			// 	return false;
 			// });
 
-			$(".menu>a").click(function(){
-				var i = $(this).index();
-				var st = $(".scene").eq(i).offset().top;
-				console.log(i+" 번째 위치값 "+st);
-				$("html,body").animate({scrollTop:st},300);
+
+			
+				$(".menu>a").click(function(){
+					var i = $(this).index();
+					var st = $(".scene").eq(i).offset().top;
+					console.log(i+" 번째 위치값 "+st);
+					$("html,body").stop().animate({scrollTop:st},300);
+				});
+			
+			
+			$(window).resize(function(){
+				$("html,body").stop().animate({scrollTop:0},300);
+				$(".menu>a").click(function(){
+					var i = $(this).index();
+					var st = $(".scene").eq(i).offset().top;
+					console.log(i+" 번째 위치값 "+st);
+					$("html,body").stop().animate({scrollTop:st},300);
+				});
 			});
+
+			
 		});
+
+		
 
 	</script>
 </head>
@@ -92,5 +109,8 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ducimus tempora assumenda nulla dicta provident eum facere quod rerum fuga.</p>
 		</div>
 	</section>
+	<script>
+		
+	</script>
 </body>
 </html>
