@@ -67,6 +67,7 @@
 				// });
 
 				//3st menu move
+
 				$(".menu>a").click(function(){
 					var target = $(this.hash);
 					console.log(target);
@@ -79,14 +80,22 @@
 					var scrollY = $(window).scrollTop();
 					console.log("스크롤값 - "+scrollY);
 					
-					if( $(".scene").eq(0).offset().top <= scrollY){
-						$(".menu>a").removeClass("active").eq(0).addClass("active");
-					}
-					if( $(".scene").eq(1).offset().top <= scrollY ){
-						$(".menu>a").removeClass("active").eq(1).addClass("active");
-					}
-					if( $(".scene").eq(2).offset().top <= scrollY ){
-						$(".menu>a").removeClass("active").eq(2).addClass("active");
+					// if( $(".scene").eq(0).offset().top <= scrollY){
+					// 	$(".menu>a").removeClass("active").eq(0).addClass("active");
+					// }
+					// if( $(".scene").eq(1).offset().top <= scrollY ){
+					// 	$(".menu>a").removeClass("active").eq(1).addClass("active");
+					// }
+					// if( $(".scene").eq(2).offset().top <= scrollY ){
+					// 	$(".menu>a").removeClass("active").eq(2).addClass("active");
+					// }
+
+
+					for(var i = 0; i<$(".scene").length;i++){
+						if( $(".scene").eq(i).offset().top <= scrollY){
+							$(".menu>a").removeClass("active").eq(i).addClass("active");
+						}
+
 					}
 
 				});
