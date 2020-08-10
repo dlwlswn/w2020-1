@@ -1,4 +1,7 @@
 <?include "header.php"; ?>
-	<div class="visual"></div> <!-- slider -->
+	<div class="sub product">product</div>
 	<section id="container_wr"></section>
+<script>
+ active(1);
+</script>
 <?include "tail.php"; ?>
