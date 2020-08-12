@@ -10,9 +10,24 @@
 	<script src="js/jquery.fullpage.js"></script>
 	<script>
 		$(function(){
+
 			$("#fullpage").fullpage({
 				anchors:["a1st","a2st","a3st","a4st"],
-				menu:"#topMenu"
+				menu:"#topMenu",
+				afterLoad:function(anchorslink,index){
+					console.log(anchorslink+", "+index);
+					if(index == 1){
+						$("#onViewOne").addClass("move");
+					}else{
+						$("#onViewOne").removeClass("move");
+					}
+
+					if(index == 2){
+						$("#onViewTwo").addClass("move");
+					}else{
+						$("#onViewTwo").removeClass("move");
+					}
+				}
 			});
 		});
 	</script>
@@ -58,6 +73,11 @@
 		#onViewOne{top:10%;transition:0.3s;opacity:0;}
 		#onViewOne.move{top:30%;opacity:1;}
 
+		#onViewTwo{left:10%;transition:0.3s;opacity:0;}
+		#onViewTwo.move{left:50%;opacity:1;}
+
+
+
 		.f3em{font-size:3em !important}
 		.f25em{font-size:2.5em !important}
 		.f2em{font-size:2em !important}
@@ -87,6 +107,11 @@
 			</div>
 		</div>
 		<div class="section" id="page2" data-anchor="a2st">
+			<div class="main" id="onViewTwo">
+				<h3 class="f25em">Lorem ipsum.</h3>
+				<p class="f15em mb20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, voluptas?	</p>
+				<a href="#">MORE</a>
+			</div>
 			<div class="scroll">
 				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
