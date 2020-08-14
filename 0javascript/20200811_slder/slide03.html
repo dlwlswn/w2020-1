@@ -84,6 +84,18 @@
 				slideView("next");
 			});
 
+
+			$("#wrapper").mousewheel(function(event) {
+		    console.log(event.deltaX, event.deltaY, event.deltaFactor);
+		    if(event.deltaY<0){
+		    	$(".bt_next").trigger("click");
+		    }
+		    if(event.deltaY>0){
+		    	$(".bt_prev").trigger("click");
+		    }
+			});
+
+
 		});
 	</script>
 	<style>
