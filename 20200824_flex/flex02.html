@@ -28,6 +28,19 @@
 
 		.gray{background:#ccc;}
 
+		/*footer*/
+		.footer{
+			padding-top: 30px;
+			padding-bottom: 50px;
+			background: #34495e;
+		}
+		.footer-info{
+			padding: 0 50px;
+		}
+
+		.contact{color:#fff;margin-bottom:20px;}
+		.sns a{display:inline-block;}
+
 		@media screen and (min-width:764px){
 			.wrapper{
 				width: 1200px;margin: 0 auto;
@@ -44,6 +57,12 @@
 			.program{
 				flex-basis:24%;
 			}
+
+			/*footer*/
+			.footer-info{display: flex;}
+			.contact{flex:2;}
+			.sns{flex:1;display: flex;justify-content:flex-end;}
+			.sns a{margin-left:10px;}
 		}
 	</style>
 </head>
@@ -86,5 +105,25 @@
 			</div>
 		</div>
 	</section>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-info">
+				<div class="contact">
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+					<p>Ipsa ducimus quas, autem voluptatum ut assumenda.</p>
+					<p>Totam, voluptas pariatur officia illo ratione similique.</p>
+					<p>Neque, aliquam quo ducimus suscipit aut libero!</p>
+				</div>
+				<div class="sns">
+					<a href="#"><img src="images/fb.png" alt="img"></a>
+					<a href="#"><img src="images/tw.png" alt="img"></a>
+					<a href="#"><img src="images/ytube.png" alt="img"></a>
+					<a href="#"><img src="images/gp.png" alt="img"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
 </body>
 </html>
